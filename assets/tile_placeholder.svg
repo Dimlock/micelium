@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180">
+<path d="M100 8 L192 170 L8 170Z" fill="#304a3c" stroke="#a8bca7" stroke-width="3"/>
+<path d="M100 35 L165 150 L35 150Z" fill="none" stroke="#6f8b77" stroke-width="2" stroke-dasharray="6 7"/>
+<text x="100" y="132" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#c2d2c3">ТАЙЛ</text></svg>

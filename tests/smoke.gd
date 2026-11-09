@@ -1,0 +1,36 @@
+extends SceneTree
+
+const Game = preload("res://scripts/game_state.gd")
+const Tri = preload("res://scripts/triangle_grid.gd")
+
+func _initialize() -> void:
+	var shape := Tri.star_setup()
+	assert(shape["central"].size() == 6)
+	assert(shape["outer"].size() == 6)
+	assert(shape["all"].size() == 12)
+	var game := Game.new()
+	game.new_game(2, 5, false, "smoke")
+	assert(game.tiles.size() == 12)
+	assert(game.players.size() == 2)
+	assert(game.players[0]["hand"].size() == 3)
+	assert(game.players[1]["hand"].size() == 4)
+	while game.phase == "queens":
+		var choices := game.initial_queen_choices()
+		assert(not choices.is_empty())
+		assert(game.place_initial_queen(choices[0]))
+	assert(game.phase == "playing")
+	assert(game.actions_left == 2)
+	assert(game.perform_develop_deck())
+	assert(game.actions_left == 1)
+	var frontier := game.exploration_choices()
+	assert(not frontier.is_empty())
+	assert(game.perform_explore(0, frontier[0]))
+	assert(game.actions_left == 0)
+	assert(game.end_turn())
+	var taken: String = game.market[0]
+	assert(not taken.is_empty())
+	assert(game.perform_develop_market(0))
+	assert(str(game.market[0]).is_empty())
+	assert(game.actions_left == 1)
+	print("SMOKE OK: tiles=", game.tiles.size(), ", current=", game.current_player)
+	quit(0)

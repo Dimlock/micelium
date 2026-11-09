@@ -1,0 +1,1667 @@
+{
+  "meta": {
+    "title": "Мицелий — демонстрационный набор компонентов",
+    "is_placeholder": true,
+    "warning": "ВСЕ числовые характеристики карт, распределение насекомых и параметры автомы ниже — ДЕМО, не оригинальные компоненты.",
+    "source_rules": "uploads/7306.pdf",
+    "replace_instructions": "Сохраните структуру JSON и поддерживаемые effect_id. Подробности — COMPONENTS.md.",
+    "demo_balance": "Упрощённые цены (1–2 споры) и производство (1–3 споры) выбраны для стабильных тестовых партий; это не оригинальные значения."
+  },
+  "colors": {
+    "red": "Красный",
+    "green": "Зелёный",
+    "brown": "Коричневый",
+    "yellow": "Жёлтый",
+    "black": "Особый (универсальный)",
+    "any": "Любой"
+  },
+  "cards": [
+    {
+      "id": "demo_01",
+      "name": "Тестовый гриб 01",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_02",
+      "name": "Тестовый гриб 02",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_03",
+      "name": "Тестовый гриб 03",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_04",
+      "name": "Тестовый гриб 04",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_05",
+      "name": "Тестовый гриб 05",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_06",
+      "name": "Тестовый гриб 06",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_07",
+      "name": "Тестовый гриб 07",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_08",
+      "name": "Тестовый гриб 08",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "development_draw_two_choose",
+      "effect_text": "При развитии из колоды возьмите 2 карты и оставьте 1.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_09",
+      "name": "Тестовый гриб 09",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_10",
+      "name": "Тестовый гриб 10",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_11",
+      "name": "Тестовый гриб 11",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_12",
+      "name": "Тестовый гриб 12",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_13",
+      "name": "Тестовый гриб 13",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_14",
+      "name": "Тестовый гриб 14",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_15",
+      "name": "Тестовый гриб 15",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_16",
+      "name": "Тестовый гриб 16",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_17",
+      "name": "Тестовый гриб 17",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_18",
+      "name": "Тестовый гриб 18",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_19",
+      "name": "Тестовый гриб 19",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_20",
+      "name": "Тестовый гриб 20",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_21",
+      "name": "Тестовый гриб 21",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_22",
+      "name": "Тестовый гриб 22",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_23",
+      "name": "Тестовый гриб 23",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_24",
+      "name": "Тестовый гриб 24",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_25",
+      "name": "Тестовый гриб 25",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_26",
+      "name": "Тестовый гриб 26",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_27",
+      "name": "Тестовый гриб 27",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_28",
+      "name": "Тестовый гриб 28",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_29",
+      "name": "Тестовый гриб 29",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_30",
+      "name": "Тестовый гриб 30",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_31",
+      "name": "Тестовый гриб 31",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_32",
+      "name": "Тестовый гриб 32",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_33",
+      "name": "Тестовый гриб 33",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_34",
+      "name": "Тестовый гриб 34",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_35",
+      "name": "Тестовый гриб 35",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_36",
+      "name": "Тестовый гриб 36",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_37",
+      "name": "Тестовый гриб 37",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_38",
+      "name": "Тестовый гриб 38",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_39",
+      "name": "Тестовый гриб 39",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 3,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_40",
+      "name": "Тестовый гриб 40",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_41",
+      "name": "Тестовый гриб 41",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_42",
+      "name": "Тестовый гриб 42",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_43",
+      "name": "Тестовый гриб 43",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_44",
+      "name": "Тестовый гриб 44",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_45",
+      "name": "Тестовый гриб 45",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_46",
+      "name": "Тестовый гриб 46",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_47",
+      "name": "Тестовый гриб 47",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_48",
+      "name": "Тестовый гриб 48",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 3,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_49",
+      "name": "Тестовый гриб 49",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_50",
+      "name": "Тестовый гриб 50",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_51",
+      "name": "Тестовый гриб 51",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_52",
+      "name": "Тестовый гриб 52",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_53",
+      "name": "Тестовый гриб 53",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_54",
+      "name": "Тестовый гриб 54",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_55",
+      "name": "Тестовый гриб 55",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_56",
+      "name": "Тестовый гриб 56",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 2,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_57",
+      "name": "Тестовый гриб 57",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_58",
+      "name": "Тестовый гриб 58",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_59",
+      "name": "Тестовый гриб 59",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_60",
+      "name": "Тестовый гриб 60",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "green"
+      ],
+      "spores": 3,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_61",
+      "name": "Тестовый гриб 61",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "red"
+      ],
+      "spores": 1,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_62",
+      "name": "Тестовый гриб 62",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "green",
+        "green"
+      ],
+      "spores": 2,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_63",
+      "name": "Тестовый гриб 63",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores": 3,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_64",
+      "name": "Тестовый гриб 64",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "green"
+      ],
+      "spores": 1,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_65",
+      "name": "Тестовый гриб 65",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 6,
+      "cost": [
+        "yellow",
+        "yellow"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_66",
+      "name": "Тестовый гриб 66",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 2,
+      "cost": [
+        "brown"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_67",
+      "name": "Тестовый гриб 67",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 3,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores": 1,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_68",
+      "name": "Тестовый гриб 68",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 4,
+      "cost": [
+        "green",
+        "brown"
+      ],
+      "spores": 2,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "art": "res://assets/card_placeholder.svg"
+    },
+    {
+      "id": "demo_69",
+      "name": "Тестовый гриб 69",
+      "latin": "Component placeholder",
+      "placeholder": true,
+      "points": 5,
+      "cost": [
+        "red",
+        "red"
+      ],
+      "spores": 3,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "art": "res://assets/card_placeholder.svg"
+    }
+  ],
+  "tiles": [
+    {
+      "id": "tile_01",
+      "color": "red",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_02",
+      "color": "red",
+      "insect": true,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_03",
+      "color": "red",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_04",
+      "color": "red",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_05",
+      "color": "red",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_06",
+      "color": "red",
+      "insect": true,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_07",
+      "color": "red",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_08",
+      "color": "red",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_09",
+      "color": "red",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_10",
+      "color": "red",
+      "insect": true,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_11",
+      "color": "red",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_12",
+      "color": "green",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_13",
+      "color": "green",
+      "insect": true,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_14",
+      "color": "green",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_15",
+      "color": "green",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_16",
+      "color": "green",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_17",
+      "color": "green",
+      "insect": true,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_18",
+      "color": "green",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_19",
+      "color": "green",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_20",
+      "color": "green",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_21",
+      "color": "green",
+      "insect": true,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_22",
+      "color": "green",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_23",
+      "color": "brown",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_24",
+      "color": "brown",
+      "insect": true,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_25",
+      "color": "brown",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_26",
+      "color": "brown",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_27",
+      "color": "brown",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_28",
+      "color": "brown",
+      "insect": true,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_29",
+      "color": "brown",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_30",
+      "color": "brown",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_31",
+      "color": "brown",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_32",
+      "color": "brown",
+      "insect": true,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_33",
+      "color": "brown",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_34",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_35",
+      "color": "yellow",
+      "insect": true,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_36",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_37",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_38",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_39",
+      "color": "yellow",
+      "insect": true,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_40",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_41",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_42",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_43",
+      "color": "yellow",
+      "insect": true,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_44",
+      "color": "yellow",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_45",
+      "color": "black",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_46",
+      "color": "black",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_47",
+      "color": "black",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_48",
+      "color": "black",
+      "insect": false,
+      "rotation": 0,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_49",
+      "color": "black",
+      "insect": false,
+      "rotation": 1,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    },
+    {
+      "id": "tile_50",
+      "color": "black",
+      "insect": false,
+      "rotation": 2,
+      "placeholder": true,
+      "art": "res://assets/tile_placeholder.svg"
+    }
+  ],
+  "automa": [
+    {
+      "id": "automa_demo_01",
+      "name": "Карта автомы · заглушка 01",
+      "placeholder": true,
+      "cost": [
+        "red",
+        "any"
+      ],
+      "spores_medium": 2,
+      "spores_hard": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "move_target": "opponent_mushroom"
+    },
+    {
+      "id": "automa_demo_02",
+      "name": "Карта автомы · заглушка 02",
+      "placeholder": true,
+      "cost": [
+        "green",
+        "any"
+      ],
+      "spores_medium": 3,
+      "spores_hard": 4,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "move_target": "opponent_queen"
+    },
+    {
+      "id": "automa_demo_03",
+      "name": "Карта автомы · заглушка 03",
+      "placeholder": true,
+      "cost": [
+        "brown",
+        "yellow"
+      ],
+      "spores_medium": 2,
+      "spores_hard": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_move_3",
+      "effect_text": "Царица может перемещаться на 1–3 тайла.",
+      "move_target": "insect"
+    },
+    {
+      "id": "automa_demo_04",
+      "name": "Карта автомы · заглушка 04",
+      "placeholder": true,
+      "cost": [
+        "any",
+        "any"
+      ],
+      "spores_medium": 3,
+      "spores_hard": 4,
+      "effect_type": "persistent",
+      "effect_id": "repeat_action",
+      "effect_text": "Можно повторять одно действие дважды за ход.",
+      "move_target": "opponent_spores"
+    },
+    {
+      "id": "automa_demo_05",
+      "name": "Карта автомы · заглушка 05",
+      "placeholder": true,
+      "cost": [
+        "red",
+        "green",
+        "any"
+      ],
+      "spores_medium": 2,
+      "spores_hard": 3,
+      "effect_type": "mushroom",
+      "effect_id": "choose_wind",
+      "effect_text": "Этот гриб позволяет выбрать направление ветра.",
+      "move_target": "own_mushroom"
+    },
+    {
+      "id": "automa_demo_06",
+      "name": "Карта автомы · заглушка 06",
+      "placeholder": true,
+      "cost": [
+        "yellow",
+        "any"
+      ],
+      "spores_medium": 3,
+      "spores_hard": 4,
+      "effect_type": "mushroom",
+      "effect_id": "dual_disperse",
+      "effect_text": "При развеивании этим грибом развевает споры и царица.",
+      "move_target": "opponent_mushroom"
+    },
+    {
+      "id": "automa_demo_07",
+      "name": "Карта автомы · заглушка 07",
+      "placeholder": true,
+      "cost": [
+        "brown",
+        "any"
+      ],
+      "spores_medium": 2,
+      "spores_hard": 3,
+      "effect_type": "instant",
+      "effect_id": "gain_insect",
+      "effect_text": "Получите 1 жетон насекомого из запаса.",
+      "move_target": "opponent_queen"
+    },
+    {
+      "id": "automa_demo_08",
+      "name": "Карта автомы · заглушка 08",
+      "placeholder": true,
+      "cost": [
+        "red",
+        "yellow"
+      ],
+      "spores_medium": 3,
+      "spores_hard": 4,
+      "effect_type": "instant",
+      "effect_id": "draw_two_deck",
+      "effect_text": "ДЕМО: возьмите 2 верхние карты колоды.",
+      "move_target": "insect"
+    },
+    {
+      "id": "automa_demo_09",
+      "name": "Карта автомы · заглушка 09",
+      "placeholder": true,
+      "cost": [
+        "green",
+        "brown",
+        "any"
+      ],
+      "spores_medium": 2,
+      "spores_hard": 3,
+      "effect_type": "persistent",
+      "effect_id": "queen_spores_3",
+      "effect_text": "Царица развеивает 3 споры вместо 2.",
+      "move_target": "opponent_spores"
+    },
+    {
+      "id": "automa_demo_10",
+      "name": "Карта автомы · заглушка 10",
+      "placeholder": true,
+      "cost": [
+        "any",
+        "any",
+        "any"
+      ],
+      "spores_medium": 3,
+      "spores_hard": 4,
+      "effect_type": "mushroom",
+      "effect_id": "mushroom_spores_plus1",
+      "effect_text": "Грибы на этом планшете развеивают +1 спору.",
+      "move_target": "own_mushroom"
+    }
+  ]
+}
